@@ -26,7 +26,7 @@
   top: 10px;
   width: 390px;
   height: 70px;
-  background: #ffffff00; 
+  background: #ffffff00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,9 +44,11 @@
   align-items: center;
   position: fixed;
   z-index: 99999;
-  margin-left: 70%;
+  margin-left: 50%;
 }
 }
+
+
 
 .header_box1_logo{
     height: 70px;
@@ -54,8 +56,10 @@
     padding: 13px 20px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #f5f5f500;
+    background-color: #f5f5f5;
     z-index: -30;
+    -webkit-transition:  2s; /* For Safari 3.1 to 6.0 */
+    transition:  2s;
 }
 @media  screen  and (max-width: 430px){
   .header_box1_logo{
@@ -96,7 +100,7 @@
 @media  screen  and (max-width: 430px){
   .header_box1_menu{
     margin: 0;
-    background-color: #ef297c;
+    background-color: #ef297c00;
     line-height: 60px;
     display: block;
     width: 25%;
@@ -122,11 +126,7 @@
 }
 }
 
-.budel{
-  font-size:40px;
-  cursor:pointer;
-  color: #ef297c;
-}
+
 @media  screen  and (max-width: 420px){
   .budel{
     font-size:30px;
@@ -137,13 +137,14 @@
 
 
 .sidenav {
+
     height: 150%;
     width: 0;
     position: fixed;
     z-index: 9999;
     top: 0px;
     right: 0;
-    background-color: #ed1e7950;
+    background-color: #ed1e7998;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 110px;
@@ -154,13 +155,13 @@
 .sidenav a {
     padding: 8px 18px 8px 40px;
     text-decoration: none;
-    font-size: 28px;
-    font-weight: 200;
-    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
     display: block;
     font-family: 'Hind', sans-serif;
-    -webkit-transition: 0.5s; /* For Safari 3.1 to 6.0 */
-    transition:  0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     text-align: right;
 }
 
@@ -204,7 +205,7 @@
     top: 68px;
     right: 25px;
     font-size: 50px;
-    margin-left: 50px;
+    margin-left: 0px;
     padding: 0px;
     -webkit-animation-name: example;
     -webkit-animation-duration: 2s;
@@ -218,7 +219,7 @@
 @media  screen  and (max-width: 360px){
   .sidenav .closebtn {
     position: absolute;
-    top: 50px;
+    top: 70px;
     right: 15px;
     font-size: 36px;
     margin-left: 50px;
@@ -257,7 +258,7 @@
 .page-footer {
     padding-top: 20px;
     color: #fff;
-    background-color: #343438;
+    background-color: #edc2d4;
 }
 .img_foo {
     padding: 15px;
@@ -274,10 +275,10 @@
     text-align: center;
     margin-right: 10px;
     font-size: 18px;
-    color: #ed1f7a;
+    color: #ffffff;
     float: center;
     margin-top: 4px;
-    background-color: black;
+    background-color: #ef297c;
 }
 
 
@@ -292,10 +293,10 @@
     text-align: center;
     margin-right: 10px;
     font-size: 18px;
-    color: #333;
+    color: #fff;
     float: center;
     margin-top: 4px;
-    background-color: black;
+    background-color: #333;
 }
 
 .abt_img2 {
@@ -316,7 +317,7 @@
     align-items: center;
     padding: 10px 0px;
     color: rgba(255, 255, 255, 0.8);
-    background-color: #151515;
+    background-color: #333;
 }
 .foo_bt {
     color: white;
@@ -325,6 +326,82 @@
 }
 
 
+.budel{
+  font-size:52px;
+  cursor:pointer;
+  color: #ef297c;
+  }
+
+
+
+
+.pulse-button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 52px;
+    font-weight: light;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: -1px;
+    color: #ef297c;
+    border: none;
+    border-radius: 50%;
+    background: #5a99d400;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
+    -webkit-animation: pulse 1.5s infinite;
+}
+
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 0px solid #e5e5e5 !important; 
+}
+
+
+
+
+@media (min-width: 768px)
+.modal-dialog {
+    width: 600px;
+    margin: 140px auto;
+}
 
 
 
@@ -757,7 +834,7 @@ img{max-width: 100%}
   margin-bottom: 0;
 }
 .section-title h2:after {
-    background: #f1f1f1 none repeat scroll 0 0;
+    background: #fff none repeat scroll 0 0;
     bottom: -43px;
     color: #ee287d;
     content: "";
@@ -767,6 +844,19 @@ img{max-width: 100%}
     padding: 0 5px;
     position: absolute;
 }
+
+.section-title h2:after {
+    background: #fff none repeat scroll 0 0;
+    bottom: -43px;
+    color: #ee287d;
+    content: "";
+    font-family: FontAwesome;
+    left: 50%;
+    margin-left: -16px;
+    padding: 0 5px;
+    position: absolute;
+}
+
 .section-title.bg_grey h2:after {
   background: #fff none repeat scroll 0 0;
 }
@@ -918,7 +1008,7 @@ img{max-width: 100%}
     07. Sepecial offer css here
 -----------*/
 .special-offer {
-  background: rgba(0, 0, 0, 0) url("img/imagen-planta.png") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("Img/download-lados.jpg") no-repeat scroll center center / cover ;
   padding: 139px 0 176px;
   position: relative;
 }
@@ -938,23 +1028,23 @@ img{max-width: 100%}
     08. Feature css here
 ---------------*/
 .feature-img img {
-  border: 1px solid #ee287d;
-  border-radius: 8%;
-  height: 228px;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-  width: 228px;
+    /* border: 1px solid #ee287d; */
+    border-radius: 3%;
+    height: 260px;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 352px;
 }
 .single-feature {
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 70px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 30px 0;
 }
-.single-feature:hover img {
+/*.single-feature:hover img {
   -webkit-transform: scale(1.07);
           transform: scale(1.07);
-}
+}*/
 .feature-desc h3 a {
   font-weight: bold;
 }
@@ -989,7 +1079,7 @@ img{max-width: 100%}
     09. Video section css here
 ------------------*/
 .video-section{
-  background: url("images/common/video-bg.jpg")no-repeat scroll center center;
+  background: url("Img/download-2-video.jpg")no-repeat scroll center center;
   background-size: cover;
   padding: 190px 0;
   position: relative;
@@ -999,7 +1089,7 @@ img{max-width: 100%}
   background: #000;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
+  opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
   top: 0;
   left: 0;
@@ -1532,7 +1622,7 @@ img{max-width: 100%}
     background: #fff none repeat scroll 0 0;
     border: 1px solid #ddd;
     border-radius: 50%;
-    color: #666;
+    color: #ef297c;
     display: inline-block;
     font-size: 24px;
     height: 55px;
@@ -1719,13 +1809,13 @@ img{max-width: 100%}
   float: none;
 }
 #contact-form > input {
-    border: 1px solid #eee;
+    border: 3px solid #eee;
     color: #aaaaaa;
     margin-bottom: 20px;
     padding: 0 20px;
 }
 #contact-form textarea {
-    border: 1px solid #eee;
+    border: 3px solid #eee;
     height: 100px;
     resize: none;
 }

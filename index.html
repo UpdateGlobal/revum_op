@@ -1,14 +1,39 @@
 <!doctype html>
-<html class="" lang="en">
+<html class="" lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Revum | Perfume</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico in the root directory -->
-    <link href="images/apple-touch-icon.png" type="images/x-icon" rel="shortcut icon">
+    <title>Revum | Aceites</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Desarrollador Luis Bernal" />
+    <link rel=”canonical” href=””/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->   
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+
+    <!-- La tarjeta Twitter comienza desde aquí, si no necesita eliminar esta sección -->
+    <!-- <meta name="twitter:card" content="summary" /> -->
+    <meta name="twitter:site" content="@yourtwitterusername" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:title" content="Se Hace a Tu Medida." /> <!-- maximum 140 char -->
+    <meta name="twitter:description" content="" /> <!-- maximum 140 char -->
+    <meta name="twitter:image" content="" />  <!--cuando publiques esta url de la página en twitter, se mostrará esta imagen-->
+    <!-- twitter card ends from here -->
+
+    <!-- facebook abrir gráfico comienza desde aquí, si no es necesario, entonces eliminar gráfico abierto relacio -->
+    <meta property="og:title" content="" /><!-- maximum 140 char -->
+    <meta property="og:url" content="" />
+    <meta property="og:description" content=""><!-- maximum 140 char -->
+    <meta property="og:locale" content="en_PE" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" /> <!-- cuando publiques esta url de la página en Facebook, se mostrará esta imagen -->
+    <meta property="fb:admins" content="">  <!-- use this if you have  -->
+    <!-- facebook open graph ends from here -->
+
     <!-- All css files are included here. -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/core.css">
@@ -20,7 +45,24 @@
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <!--scrooll change-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>  
+    <script>
+      $(window).scroll(function() {
+        if ($("#menu").offset().top > 300) {
+            $("#menu").addClass("revum_nav");
+        } else {
+            $("#menu").removeClass("revum_nav");
+        }
+      });
+    </script>
+    <style type="text/css">
+    .revum_nav {height: 70px;width: 300px;padding: 13px 20px;-webkit-box-sizing: border-box;box-sizing: border-box;background-color: #f5f5f500;
+    z-index: -30;-webkit-transition:  2s; /* For Safari 3.1 to 6.0 */transition:  2s;} 
+    </style>
+    
 </head>
 
 <body>
@@ -32,42 +74,39 @@
 
         <!--Menu-->
         <div class="container-fluid">
-            <div style="background-color: #00000050;">
             <div class="row">
                 <div class="col-md-6">
-                
-                            <nav class="navbar">
-                              <div class="container-fluid" style="padding: 10px 5px 10px;">
-                                <div class="header_box1">
-                                    
-                                    <div class="header_box1_logo"><a href="index.php">
-                                        <img src="img/revum.png" ></a>
-                                    </div>
+                    <nav class="navbar">
+                        <div class="container-fluid" style="padding: 10px 5px 10px;">
+                            <div class="header_box1">
+                                <div class="header_box1_logo" id="menu"><a href="index.php">
+                                    <img src="img/revum.png" ></a>
                                 </div>
-
-                                <div id="mySidenav" class="sidenav">
-                                    <ul class="side">
-                                        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-                                        <li><a href="index.php"></i> Inicio</a></li>
-                                        <li><a href="#historias"></i> Historias</a></li>
-                                        <li><a href="#propiedades"> Propiedades</a></li>
-                                        <li><a href="#Uso"></i> Usos</a></li>
-                                        <li><a href="#somos"></i> Quienes Somos</a></li>
-                                        <li><a href="#presentaciones"></i> Presentaciones</a></li>
-                                        <li><a href="#contacto"></i> Contacto</a></li>
-                                    </ul>
-
-                            </nav>
-
+                            </div>
+                            <div id="mySidenav" class="sidenav">
+                                <ul class="side">
+                                    <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                                    <li><a href="index.php"></i> Inicio</a></li>
+                                    <li><a href="#historias"></i> Historias</a></li>
+                                    <li><a href="#propiedades"> Propiedades</a></li>
+                                    <li><a href="#Uso"></i> Usos</a></li>
+                                    <li><a href="#somos"></i> Quienes Somos</a></li>
+                                    <li><a href="#presentaciones"></i> Presentaciones</a></li>
+                                    <li><a href="#contacto"></i> Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>    
+                    </nav>
                 </div>
                 <div class="col-md-6" >
                     <div class="header_box1" >
-                    <div class="header_box1_menu"> 
-                        <span class="budel" onclick="openNav()">&#9776;</span>
-                    </div>
+                        <div class="header_box1_menu"> 
+                            <div class='container'>
+                            <span class='pulse-button' onclick="openNav()">&#9776;</span>
+                            </div>
+                        <div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
         <!--Menu-->
@@ -85,7 +124,7 @@
                                 <h1 align="left">Loren Ipsum text #1</h1>
                             </div>	
                             <div class="desc " data-wow-duration="1.2s" data-wow-delay="0.2s" align="left">
-                                <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel volutpat felis, eu condimentum<br> massa.lorem ipsum dolor sit amet,consectetur adipicing elit.</p>
+                                <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
                             </div>
                             <div class="explore-now " data-wow-duration="1.3s" data-wow-delay=".5s" align="left">
                                 <a href="index-4.html#">Comprar Aqui</a>
@@ -111,7 +150,7 @@
                     </div>
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="about-us-img">
-                            <img src="images/about/about-1.jpg" alt="">
+                            <img src="img/download.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -133,7 +172,7 @@
                 <div class="row">
                     <div class="col-md-7 col-sm-6">
                         <div class="choose-us-img">
-                            <img src="images/about/choose.png" alt="">
+                            <img src="Img/download-1.jpg" alt="">
                         </div>
                     </div>
                     <div class="col-md-5 col-sm-6">
@@ -206,7 +245,7 @@
             <div class="container">
                <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <div class="section-title text-center">
+                        <div class="section-title bg_white text-center">
                             <h2>Presentaciones</h2>
                             <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
                         </div>
@@ -216,7 +255,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-feature text-center">
                             <div class="feature-img">
-                                <img src="images/feature/1.png" alt="">
+                                <img src="Img/download-3.jpg" alt="">
                             </div>
                             <div class="feature-desc">
                                 <h3><a href="index.html#">Uso #1</a></h3>
@@ -228,7 +267,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-feature text-center">
                             <div class="feature-img">
-                                <img src="images/feature/2.png" alt="">
+                                <img src="Img/download-3.jpg" alt="">
                             </div>
                             <div class="feature-desc">
                                 <h3><a href="index.html#">Uso #2</a></h3>
@@ -240,7 +279,7 @@
                     <div class="col-md-4 hidden-sm col-xs-12">
                         <div class="single-feature text-center">
                             <div class="feature-img">
-                                <img src="images/feature/3.png" alt="">
+                                <img src="Img/download-3.jpg" alt="">
                             </div>
                             <div class="feature-desc">
                                 <h3><a href="index.html#">Uso 3#</a></h3>
@@ -325,9 +364,24 @@
                     <div class="col-md-12">
                         <div class="video-section-inner">
                             <div class="video-icon">
-                                <a href="https://www.youtube.com/watch?v=E6ZgAyx8kWU"><i class="zmdi zmdi-play"></i></a>
+                                <a href="" data-toggle="modal" data-target="#myModal"><i class="zmdi zmdi-play"></i></a>
                             </div>
                             <h2>Mira nuestros video</h2>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                      <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+
+                                          <div class="modal-body">
+                                            <iframe src="https://www.youtube.com/embed/E6ZgAyx8kWU" style="width: 100%; height: 400px;top: 100px;" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- Modal -->
                         </div>
                     </div>
                 </div>
@@ -360,7 +414,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="contact-form-img text-center">
-                            <img src="images/common/contact.jpg" alt="">
+                            <img src="img/download-3.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -377,11 +431,8 @@
                     <img src="Img/revum.png" class="img-responsive abt_img2 hidden-sm hidden-md hidden-lg">
                     <p class="grey-text text-lighten-4 text_foot img_foo foo_bt">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
                       <div class="row img_foo">
-                        <a href="https://www.behance.net/ventas326d" target="_blank"><span class="social"> <i class="fab fa-behance"></i></span></a>
-                        <a href="https://www.linkedin.com/company/update-global-marketing" target="_blank"><span class="social"> <i class="fab fa-linkedin-in"></i></span></a>
                         <a href="https://www.facebook.com/updatemarketing/" target="_blank"><span class="social"> <i class="fab fa-facebook-f"></i></span></a>
-                        <a href="https://www.instagram.com/update.pe/" target="_blank"><span class="social"> <i class="fab fa-instagram"></i></span></a>
-                         
+                        <a href="https://www.instagram.com/update.pe/" target="_blank"><span class="social"> <i class="fab fa-instagram"></i></span></a>   
                       </div>
                   </div>
                 </div>
@@ -418,7 +469,7 @@
     <script src="js/main.js"></script>
     <script>
     function openNav() {
-        document.getElementById("mySidenav").style.width = "300px";
+        document.getElementById("mySidenav").style.width = "250px";
     }
 
     function closeNav() {
